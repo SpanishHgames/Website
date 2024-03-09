@@ -1,0 +1,135 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s;
+}
+
+nav {
+    background-color: #ffcccc;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6699;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    transition: transform 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.game {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: inherit; /* Heredar color del texto del padre */
+}
+
+.game:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.game:hover img {
+    transform: scale(1.1);
+}
+
+.game p {
+    font-size: 14px;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.game:hover p {
+    color: #ff6699;
+}
+
+#game-info {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 9999;
+}
+
+#game-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+#game-info p {
+    margin-bottom: 10px;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #ff6699;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+}
