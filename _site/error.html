@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanishhgames - ERROR</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out;
+        }
+        .animate-slideIn {
+            animation: slideIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 flex items-center justify-center min-h-screen">
+
+    <div class="container mx-auto p-6 max-w-md bg-white rounded-lg shadow-lg animate-fadeIn">
+        <div class="text-center space-y-4">
+            <h1 id="error-code" class="text-6xl font-bold text-pink-600 mb-4 animate-slideIn">COMING SOON</h1>
+            <p id="error-text" class="text-lg text-gray-700 mb-6 animate-slideIn">This version of this game is in development</p>
+            <a href="index.html" class="btn bg-pink-500 text-white py-2 px-4 rounded-full hover:bg-pink-600 transition duration-300 ease-in-out inline-flex items-center animate-slideIn">
+                <i class="fas fa-arrow-left mr-2"></i>Back to home page
+            </a>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
