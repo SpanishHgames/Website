@@ -20,7 +20,7 @@
 
     <section class="container mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         <div class="game bg-white rounded-lg shadow-md p-6">
-            <img src="https://avatars.githubusercontent.com/u/107765373?v=4" alt="Miembro 1" class="w-32 h-32 rounded-full mx-auto">
+            <img src="https://avatars.githubusercontent.com/u/107765373?v=4" alt="Miembro 1" class="w-32 h-32 rounded-full mx-auto cursor-pointer" id="img-1">
             <h3 class="text-xl font-semibold mt-4">twib</h3>
             <p class="text-gray-600">Role: Desarrollador <br><br> I'm a small programmer who likes to program java html javascript and css</p>
             <div class="flex justify-center mt-4">
@@ -31,7 +31,7 @@
         </div>
 
         <div class="game bg-white rounded-lg shadow-md p-6">
-            <img src="https://avatars.githubusercontent.com/u/149289426?v=4" alt="Miembro 2" class="w-32 h-32 rounded-full mx-auto">
+            <img src="https://avatars.githubusercontent.com/u/149289426?v=4" alt="Miembro 2" class="w-32 h-32 rounded-full mx-auto cursor-pointer" id="img-2">
             <h3 class="text-xl font-semibold mt-4">Akit</h3>
             <p class="text-gray-600">Role: Desarrollador <br><br> my name is akit</p>
             <div class="flex justify-center mt-4">
@@ -41,6 +41,16 @@
             </div>
         </div>
     </section>
+
+    <div id="myModal" class="modal hidden fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
+        <div class="modal-content bg-white p-4 rounded-lg max-w-sm">
+            <button class="modal-close absolute top-0 right-0 m-6 text-gray-700 hover:text-gray-900 text-4xl leading-none focus:outline-none">
+                &times;
+            </button>            
+            <img id="modal-img" src="" alt="Modal Image" class="w-full">
+        </div>
+    </div>    
+    
 
     <script src="main.js"></script>
 </body>
