@@ -7,25 +7,6 @@ Official website of SpanishHgames
 
 On our official website you can find information about the organization of our translated games and more information
 
-# Folder Order
-
-```ascii
-website/
-|-- games/
-|   |-- NaisTrainingDiary.html
-|-- img/
-|   |-- game2.png
-|-- public/
-|-- error-page.css
-|-- game.css
-|-- index.css
-|-- main.js
-|-- /
-|-- error.html
-|-- index.html
-|-- team.html
-```
-
 # Contributors
 
 Thank you very much for helping in the project ❤
