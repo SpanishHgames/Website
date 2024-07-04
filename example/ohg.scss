@@ -1,0 +1,58 @@
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-stack: 'Helvetica Neue', sans-serif;
+$base-padding: 16px;
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  padding: $base-padding;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: $base-padding;
+  text-align: center;
+  @include flex-center;
+}
+
+main {
+  background-color: white;
+  padding: $base-padding;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: $base-padding;
+}
+
+footer {
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
+  padding: $base-padding;
+  @include flex-center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
